@@ -1,27 +1,5 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
-  /**
-   * colors
-   */
-
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -331,9 +309,27 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+.bagde {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.title {
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #2a2a2a;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+.foto{
+  border-radius: 10%;
 }
 
 .info-content .name {
@@ -843,7 +839,7 @@ margin-top: 10px;}
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
-.skill .title-wrapper {
+.skill  .title-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -854,6 +850,10 @@ margin-top: 10px;}
   color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
+}
+
+.sertifications{
+  margin-top: 13px;
 }
 
 .skill-progress-bg {
@@ -1882,3 +1882,4 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
